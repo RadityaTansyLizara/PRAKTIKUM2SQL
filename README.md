@@ -24,7 +24,7 @@ Langkah-langkahnya :
 
 1. Buat dulu script untuk table Mahasiswa :
 
-``` create table Mahasiswa (
+create table Mahasiswa (
     nim varchar(10) PRIMARY KEY,
     nama varchar(25) NOT NULL,
     jenis_kelamin ENUM('Laki-Laki', 'Perempuan'),
@@ -35,8 +35,7 @@ Langkah-langkahnya :
     no_hp varchar(15) NOT NULL,
     kd_ds varchar(10) NOT NULL,
     FOREIGN KEY (kd_ds) REFERENCES Dosen(kd_ds)
-    ); ```
-python
+    ); 
 ![image](https://github.com/RadityaTansyLizara/PRAKTIKUM2SQL/assets/147571863/c14807e2-4433-4656-932b-c0f815984636)
 
 Tampilkan hasil table :
