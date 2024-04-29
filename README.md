@@ -219,49 +219,6 @@ select*from Mahasiswa -> order by nama asc;
 ![image](https://github.com/RadityaTansyLizara/PRAKTIKUM2SQL/assets/147571863/492b646f-3b67-44c6-a4b1-c8f72f4330b2)
 
 
-Evaluasi dan Pertanyaan
-Tulis semua perintah-perintah SQL percobaan di atas beserta outputnya!
-
-1. Menambah data :
-
-INSERT INTO <table> (field1, ..., fieldn) VALUE (value1, ..., valuen)
-
-Contoh :
-
-INSERT INTO biodata (nim, nama, alamat) VALUE ('1234','Uyun','Bekasi');
-
-alt text
-
-2. Menampilkan data :
-
-SELECT * FROM <table> SELECT [field1, ..., fieldn] FROM <table>
-
-Contoh :
-
-SELECT*FROM biodata;
-
-alt text
-
-3. Mengubah data :
-
-UPDATE <table> SET field1=val1, ..., fieldn=valn WHERE <kondisi>;
-
-Contoh :
-
-UPDATE biodata SET nama='Nurul', alamat='Setu' WHERE nim='1234';
-
-alt text
-
-4. Menghapus data :
-
-DELETE FROM <table> WHERE <kondisi>
-
-Contoh :
-
-DELETE FROM biodata WHERE nim=‘1234’
-
-alt text
-
 Apa bedanya penggunaan BETWEEN dan penggunaan operator >= dan <= ?
 
 (misal: tgl_lahir BETWEEN '1990-10-10' AND '1992-10-11')
@@ -270,10 +227,8 @@ Apa bedanya penggunaan BETWEEN dan penggunaan operator >= dan <= ?
 
 Jawaban nya :
 
-Operator BETWEEN ini untuk menangani operasi “jangkauan” sedangkan operator >= dan <= termasuk pada operator relasional. Operator yang digunakan untuk perbandingan antara dua buah nilai. Jenis dari operator ini adalah: = , >, <, >=, <=, <>
+operator BETWEEN adalah cara yang lebih ringkas dan efisien untuk memilih nilai dalam suatu rentang, sedangkan operator >= dan <= memberikan lebih banyak fleksibilitas dalam menentukan rentang.
 
 Berikan kesimpulan anda!
 
-Data Manipulation Language (DML) adalah bahasa pemrograman yang digunakan untuk mengakses, memanipulasi, dan mengelola data dalam sebuah database. DML memungkinkan pengguna untuk melakukan operasi seperti penyisipan data baru, pembaruan data yang sudah ada, penghapusan data, dan kueri data untuk pengambilan informasi yang diperlukan.
-
-Dalam DML, pengguna dapat menggunakan perintah SQL (Structured Query Language) untuk mengakses data. SQL adalah bahasa standar untuk mengakses dan mengelola data dalam database relasional. Perintah SQL yang digunakan dalam DML termasuk menambah, mengubah, menghapus, dan menampilkan data seperti yang telah dipraktekkan diatas.
+Perintah DML digunakan untuk melakukan berbagai operasi pada data dalam database, seperti memasukkan, memperbarui, dan menghapus data. perintah DML sangat penting untuk mengelola data dalam database. Perintah INSERT digunakan untuk menambah data baru, perintah UPDATE digunakan untuk mengubah data yang sudah ada, dan perintah DELETE digunakan untuk menghapus data. Operator ANTARA dan operator >= dan <= digunakan untuk memfilter data dalam rentang tertentu. Memahami sintaksis dan fungsionalitas perintah ini sangat penting untuk manajemen database yang efektif.
